@@ -1,0 +1,197 @@
+@font-face {
+	font-family: rubikRegular;
+	src: url('./assets/fonts/Rubik/Rubik-Regular.ttf');
+}
+@font-face {
+	font-family: rubikBold;
+	src: url('./assets/fonts/Rubik/Rubik-Bold.ttf');
+}
+@font-face {
+	font-family: rubikEBold;
+	src: url('./assets/fonts/Rubik/Rubik-ExtraBold.ttf');
+}
+@font-face {
+	font-family: kanitRegular;
+	src: url('./assets/fonts/Kanit/Kanit-Regular.ttf');
+}
+body {
+	max-width: 1440px;
+	margin: auto;
+}
+:root {
+	--primaryTextColor: #13293d;
+	--secondaryColor: #cb2449;
+}
+a {
+	text-decoration: none;
+	color: var(--primaryTextColor);
+}
+.nav {
+	max-width: 90rem;
+	margin: auto;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 20px 30px;
+}
+.nav > a {
+	flex: 1;
+	-webkit-tap-highlight-color: transparent;
+}
+.nav h1 {
+	color: var(--primaryTextColor);
+	font-family: rubikEBold;
+}
+.nav > .navlinks {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex: 3;
+	gap: 20px;
+}
+.nav ul {
+	display: flex;
+	gap: 3.125rem;
+	background-color: #f6f9ff;
+	padding: 1.25rem 5rem;
+	border-radius: 0.5rem;
+}
+.nav ul li {
+	font-family: rubikRegular;
+	list-style: none;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	align-items: center;
+	white-space: nowrap;
+}
+.nav .active {
+	color: var(--secondaryColor);
+	font-family: rubikBold;
+}
+.nav img {
+	width: 50px;
+	height: 5px;
+}
+header {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	gap: 3.125rem;
+	padding: var(--pagePadding);
+	flex-wrap: wrap;
+	min-height: 85vh;
+	padding: 0 20px;
+}
+header section {
+	flex: 1;
+	min-width: 350px;
+}
+
+header h2 {
+	color: #030303;
+	font-size: 2.8rem;
+	font-family: kanitRegular;
+}
+header p {
+	font-size: 1.2rem;
+	line-height: 30px;
+}
+header img {
+	width: 100%;
+	border-radius: 18px;
+}
+.article h2 {
+	color: #030303;
+	font-size: 2rem;
+	font-family: kanitRegular;
+}
+.article {
+	max-width: 90rem;
+	margin: auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	gap: 3 0px;
+	padding: 0 20px;
+}
+.article section {
+	max-width: 800px;
+	margin: auto;
+}
+.article div {
+	display: flex;
+	justify-content: center;
+	gap: 6.25rem;
+}
+.article div > h3 {
+	text-align: right;
+	flex: 1;
+	font-family: kanitRegular;
+}
+.article section {
+	flex: 1;
+	max-width: 1200px;
+	margin-top: 50px;
+}
+.article p {
+	font-size: 20px;
+	margin-top: 50px;
+	border-bottom: 1px solid #d4d4d4;
+	padding-bottom: 30px;
+	flex: 2;
+}
+.form > h2 {
+	font-size: 2rem;
+	text-align: left;
+}
+.form,
+form {
+	display: flex;
+	flex-direction: column;
+	gap: 30px;
+	margin-bottom: 50px;
+	padding: 0 20px;
+	justify-content: center;
+	align-items: center;
+}
+form input {
+	border-radius: 8px;
+	width: 500px;
+	height: 50px;
+	max-width: 80%;
+}
+form #names {
+	padding: 10px;
+	border: 1px solid #eee;
+}
+form textarea {
+	border-radius: 8px;
+	width: 500px;
+	min-height: 150px;
+	max-width: 80%;
+	padding: 20px 10px;
+	border: 1px solid #ddd;
+}
+form button {
+	background-color: var(--secondaryColor);
+	min-width: 200px;
+	height: 50px;
+	color: #fff;
+	border: none;
+	border-radius: 8px;
+}
+form div {
+	display: flex;
+	gap: 20px;
+	width: 100%;
+}
+form label,
+form textarea,
+form input {
+	flex: 1;
+}
+form label {
+	text-align: left;
+}

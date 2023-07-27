@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>YabaTech Security</title>
+		<link rel="stylesheet" href="./style.css" />
+	</head>
+	<body>
+		<nav class="nav">
+			<h1>YabaTech</h1>
+			<ul>
+				<li>
+					<a href="/" class="active"> Home </a>
+					<img src="./assets/images/active.svg" alt="active" />
+				</li>
+				<li><a href="#">About</a></li>
+			</ul>
+		</nav>
+		<header>
+			<section>
+				<h2>Securing Our Campus, Empowering Our Community</h2>
+				<p>
+					At YabaTech, we prioritize the safety and well-being of our students,
+					faculty, and staff above all else. As part of our unwavering
+					commitment to providing a secure learning and working environment, we
+					have implemented a state-of-the-art Campus Security System that sets a
+					new standard for safety on educational campuses.
+				</p>
+			</section>
+			<section>
+				<img src="./assets/images/hero.jpg " alt="" />
+			</section>
+		</header>
+		<article class="article">
+			<h2>Why Choose Our Campus Security System?</h2>
+			<section>
+				<!-- Point 1 -->
+				<div>
+					<h3>Comprehensive Protection</h3>
+					<p>
+						Our integrated security system encompasses a wide array of
+						cutting-edge technologies, ensuring a holistic approach to safety on
+						campus. From surveillance cameras and access control systems to
+						emergency communication devices, we leave no stone unturned in
+						safeguarding every inch of our university grounds.
+					</p>
+				</div>
+
+				<!-- Point 2 -->
+				<div>
+					<h3>Real-time Monitoring</h3>
+					<p>
+						With our advanced security setup, we offer real-time monitoring of
+						critical areas, providing an instant response to any potential
+						threats. Our security personnel are equipped with the latest tools
+						and technology to ensure a rapid and efficient reaction to any
+						situation that may arise.
+					</p>
+				</div>
+
+				<!-- Point 3 -->
+				<div>
+					<h3>Proactive Threat Detection</h3>
+					<p>
+						Our Campus Security System leverages artificial intelligence and
+						machine learning algorithms to identify suspicious activities and
+						potential threats before they escalate. By analyzing patterns and
+						behaviors, we can proactively take measures to prevent incidents and
+						maintain a secure campus environment.
+					</p>
+				</div>
+
+				<!-- Point 4 -->
+				<div>
+					<h3>Access Control Made Easy</h3>
+					<p>
+						Controlling access to various facilities and buildings is essential
+						to campus security. Our system employs cutting-edge biometric
+						technology, smart cards, and secure access points, allowing
+						authorized individuals seamless entry while restricting access to
+						unauthorized personnel.
+					</p>
+				</div>
+
+				<!-- Point 5 -->
+				<div>
+					<h3>Emergency Response Solutions</h3>
+					<p>
+						In case of emergencies, every second counts. Our Campus Security
+						System is equipped with emergency communication devices, such as
+						panic buttons and emergency call stations, strategically placed
+						throughout the campus. With just a push of a button, immediate
+						assistance can be summoned.
+					</p>
+				</div>
+
+				<!-- Point 6 -->
+				<div>
+					<h3>Mobile Security App</h3>
+					<p>
+						We understand the importance of staying connected and informed. Our
+						dedicated mobile security app provides instant updates, emergency
+						alerts, and a quick way to report any suspicious activities,
+						ensuring that every member of our community can actively participate
+						in maintaining a safe campus.
+					</p>
+				</div>
+
+				<!-- Point 7 -->
+				<div>
+					<h3>Collaboration with Local Authorities</h3>
+					<p>
+						Our commitment to safety extends beyond campus boundaries. We have
+						established strong partnerships with local law enforcement agencies
+						to facilitate a prompt and coordinated response to any off-campus
+						incidents that may affect our students and staff.
+					</p>
+				</div>
+			</section>
+		</article>
+		<article class="form">
+			<h2>Report an Incident</h2>
+			<form action="/submit-incident" method="post">
+				<!-- Field 1: Names of People involved -->
+				<div>
+					<label for="names">Names of People involved:</label>
+					<input type="text" id="names" name="names" required />
+				</div>
+
+				<!-- Field 2: Video/Picture -->
+				<div>
+					<label for="media">Upload Video/Picture:</label>
+					<input
+						type="file"
+						id="media"
+						name="media"
+						accept="image/*, video/*"
+					/>
+				</div>
+
+				<!-- Field 3: Statement -->
+				<div>
+					<label for="statement">Statement:</label>
+					<textarea
+						id="statement"
+						name="statement"
+						rows="4"
+						required
+					></textarea>
+				</div>
+
+				<!-- Submit Button -->
+				<div>
+					<button type="submit">Submit</button>
+				</div>
+			</form>
+		</article>
+	</body>
+</html>
