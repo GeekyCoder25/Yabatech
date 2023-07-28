@@ -74,7 +74,7 @@ a {
 	height: 5px;
 }
 header {
-	width: 100%;
+	width: 95%;
 	display: flex;
 	align-items: center;
 	justify-content: space-around;
@@ -82,13 +82,16 @@ header {
 	padding: var(--pagePadding);
 	flex-wrap: wrap;
 	min-height: 85vh;
-	padding: 0 20px;
+	margin: auto;
 }
 header section {
 	flex: 1;
 	min-width: 350px;
 }
-
+header section:nth-child(2) {
+  display: flex;
+  justify-content: center;
+}
 header h2 {
 	color: #030303;
 	font-size: 2.8rem;
@@ -99,7 +102,7 @@ header p {
 	line-height: 30px;
 }
 header img {
-	width: 100%;
+	width: 90%;
 	border-radius: 18px;
 }
 .article h2 {
@@ -119,6 +122,8 @@ header img {
 .article section {
 	max-width: 800px;
 	margin: auto;
+	flex: 1;
+	margin-top: 50px;
 }
 .article div {
 	display: flex;
@@ -129,11 +134,7 @@ header img {
 	text-align: right;
 	flex: 1;
 	font-family: kanitRegular;
-}
-.article section {
-	flex: 1;
-	max-width: 1200px;
-	margin-top: 50px;
+	min-width: 200px;
 }
 .article p {
 	font-size: 20px;
@@ -145,6 +146,7 @@ header img {
 .form > h2 {
 	font-size: 2rem;
 	text-align: left;
+	font-family: kanitRegular;
 }
 .form,
 form {
@@ -194,4 +196,32 @@ form input {
 }
 form label {
 	text-align: left;
+}
+@media (max-width: 1000px) {
+  header {
+    gap: 10px;
+    min-height: 100%;
+    margin-bottom: 20px;
+  }
+  .article div {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .article div > h3 {
+    text-align: left;
+  }
+  .article p {
+    width: 100%;
+    margin-top: 0;
+  }
+  form {
+    align-items: center;
+  }
+  .form div {
+    flex-direction: column;
+  }
+  form input, 
+  form textarea {
+    max-width: 100%;
+  }
 }
