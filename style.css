@@ -128,7 +128,7 @@ header img {
 .article div {
 	display: flex;
 	justify-content: center;
-	gap: 6.25rem;
+	gap: 6.25rem
 }
 .article div > h3 {
 	text-align: right;
@@ -148,25 +148,31 @@ header img {
 	text-align: left;
 	font-family: kanitRegular;
 }
+.form {
+  width: 100%;
+}
+form {
+  width: 95%;
+  margin: auto;
+}
 .form,
 form {
 	display: flex;
 	flex-direction: column;
 	gap: 30px;
 	margin-bottom: 50px;
-	padding: 0 20px;
 	justify-content: center;
 	align-items: center;
 }
 form input {
-	border-radius: 8px;
 	width: 500px;
 	height: 50px;
-	max-width: 80%;
+	max-width: 80%
 }
 form #names {
 	padding: 10px;
 	border: 1px solid #eee;
+	border-radius: 8px;
 }
 form textarea {
 	border-radius: 8px;
